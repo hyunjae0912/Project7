@@ -3,14 +3,15 @@ package array;
 public class Ex5 {
 
 	public static void main(String[] args) {
-		int sum = 0;
-		int[] num = { 10, 15, 20, 25, 30 };
+		char[] srcArr = {'a','b','c','d','e'};
+		char[] copyArr = new char[3];
 		
-		for (int i = 0; i < num.length; i++) {
-			sum += num[i];
+		System.arraycopy(srcArr, 1, copyArr, 0, 3);
+		
+		
+		for(int i = 0; i < copyArr.length;i++) {
+			System.out.println(copyArr[i]);
 		}
-
-		System.out.println("배열의 합 : " + sum);
 
 	}
 
